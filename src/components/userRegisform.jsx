@@ -21,12 +21,12 @@ const UserRegistrationForm = () => {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-[#a8e063] to-[#56ab2f] px-4  py-8">
-      <div className="w-full max-w-md  p-8 rounded-xl shadow-lg">
-        <h2 className="text-2xl font-bold text-center text-green-800 mb-6">Register</h2>
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-[#a8e063] to-[#56ab2f] px-4  pt-20">
+      <div className="w-full max-w-md bg-green-800 p-8 rounded-xl shadow-lg">
+        <h2 className="text-2xl font-bold text-center text-white mb-6">Register</h2>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
               Name
             </label>
             <input
@@ -34,14 +34,14 @@ const UserRegistrationForm = () => {
               id="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
+              className="w-full px-4 py-2 border border-gray-300  bg-white text-black placeholder-black rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
               placeholder="Enter your name"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
               Email
             </label>
             <input
@@ -49,14 +49,14 @@ const UserRegistrationForm = () => {
               id="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
+              className="w-full px-4 py-2 border border-gray-300  bg-white text-black placeholder-black rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
               placeholder="Enter your email"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="password" className="block text-sm font-medium text-white mb-1">
               Password
             </label>
             <input
@@ -64,14 +64,14 @@ const UserRegistrationForm = () => {
               id="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
+              className="w-full px-4 py-2 border border-gray-300  bg-white text-black placeholder-black rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
               placeholder="Enter password"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="contact" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="contact" className="block text-sm font-medium text-white mb-1">
               Contact Number
             </label>
             <input
@@ -79,21 +79,21 @@ const UserRegistrationForm = () => {
               id="contact"
               value={formData.contact}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
+              className="w-full px-4 py-2 border border-gray-300  bg-white text-black placeholder-black rounded-lg focus:ring-2 focus:ring-green-500 outline-none"
               placeholder="Enter contact number"
               required
             />
           </div>
 
           <div>
-            <label htmlFor="role" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="role" className="block text-sm font-medium text-white mb-1">
               Select Role
             </label>
             <select
               id="role"
               value={formData.role}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-green-500 outline-none"
+              className="w-full px-4 py-2 border border-gray-300  bg-white text-black placeholder-black rounded-lg  focus:ring-2 focus:ring-green-500 outline-none"
               required
             >
               <option value="user" className='text-black'>User</option>
@@ -101,7 +101,7 @@ const UserRegistrationForm = () => {
             </select>
           </div>
 
-           <p className='text-black text-center mt-4'>Already have an account? 
+           <p className='text-white text-center mt-4'>Already have an account? 
           <Link to="/login" className='text-green-600 hover:underline'>Login</Link>
 
         </p>
